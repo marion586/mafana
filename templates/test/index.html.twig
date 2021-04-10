@@ -1,0 +1,293 @@
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimtum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Ecole Nationale d'Informatique</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+    
+ <!-- Modal debut -->
+    
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+                        
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <form action="#" id="loginForm">
+                            <div class="form-group">
+                                <label class="control-label" for="username">Numero de carte d'etudiant</label>
+                                <input type="text"  required="" value="" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="password">Password</label>
+                                <input type="password" title="Please enter your password" placeholder="******" required="" value="" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="checkbox login-checkbox">
+                                <label>
+                                        <input type="checkbox" class="i-checks"> Enregister le mot de passe </label>
+                            </div>
+                            <button class="btn btn-success btn-block loginbtn">Se connecter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+<!-- Modal fin --> 
+    <header class="top-header">
+        <div class="header_top">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="logo_section">
+                        <a class="navbar-brand" href="#"><img src="Include/images/logo.jpg" width="25%" alt="image"></a>
+                    </div>
+                    <div class="site_information">
+                        <ul>
+                            <li><a href="#"><img src="Include/images/mail_icon.png" alt="#" />dando@gmail.com</a></li>
+                            <li><a href="tel:exchang@gmail.com"><img src="Include/images/phone_icon.png" alt="#" />033 45 310 69</a></li>
+                            <li><a class="connexion" href="#" data-toggle="modal" data-target="#myModal">Connexion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="header_bottom">
+          <div class="container">
+            <div class="col-sm-12">
+                <div class="menu_orange_section" style="background:#e4a3a9;">
+                   <nav class="navbar header-nav navbar-expand-lg"> 
+                     <div class="menu_section">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" href="index.php">Accueil</a></li>
+                        <li><a class="nav-link" href="#">Formation</a></li>
+                        
+                        <li><a class="nav-link" href="#">Contact</a></li>
+                       
+                    </ul>
+                </div>
+                     </div>
+                 </nav>
+                 <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Search">
+                    <a class="search-btn">
+                        <img src="Include/images/search_icon.png" alt="#" />
+                    </a>
+                </div> 
+                </div>
+            </div>
+                
+          </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-13">
+                <img src="Include/images/ENI1.jpg" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+
+    <!-- Start Banner -->
+        <div class="section mt-4">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">Accueuil</a> / </li>
+                    <li><a href="#">Contacter-nous</a> / </li>
+                    <li><a href="#">Apprendre</a> / </li>
+                    <li><a href="#">Connecter</a> / </li>
+                </ol>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #e4a3a9; color: black">
+                                Accueil
+                            </div>
+                            <div class="card-body">
+                                <ul class="liste">
+                                    <li><a href="#"><i class="fa fa-user"></i> Mot de Directeur</a></li>
+                                    <li><a href="#"><i class="fa fa-image"></i> Photos</a></li>
+                                </ul>
+                            </div>
+                        </div> <br>
+                        <div class="card">
+                            <div class="card-header" style="background-color: #e4a3a9; color: black">
+                                Nos formation
+                            </div>
+                            <div class="card-body">
+                                <ul class="liste">
+                                    <li><a href="#"><i class="fa fa-folder"></i> Licences</a></li>
+                                    <li><a href="#"><i class="fa fa-user text-info"></i> Master</a></li>
+                                </ul>
+                            </div>
+                         </div>
+                    </div>  
+                    <div class="col-md-6"></div> 
+                    
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header" style="background-color: #e4a3a9; color: black">
+                                Actualites
+                            </div>
+                            <div class="card-body">
+                                <ul class="liste">
+                                    <div class="user-comment">
+                                        <img src="1.jpg" alt="" />
+                                        <div class="comment-details">
+                                            <p>Je m'apple tsarandro,  je m'appelle tsarandro asdfasdfasdf</p>
+                                        </div>
+                                    </div>
+                                </ul>
+                                <ul class="liste">
+                                    <div class="user-comment">
+                                        <img src="1.jpg" alt="" />
+                                        <div class="comment-details">
+                                            <p>Je m'apple tsarandro,  je m'appelle tsarandro asdfasdfasdf</p>
+                                        </div>
+                                    </div>
+                                </ul>
+                                <ul class="liste">
+                                    <div class="user-comment">
+                                        <img src="1.jpg" alt="" />
+                                        <div class="comment-details">
+                                            <p>Je m'apple tsarandro,  je m'appelle tsarandro asdfasdfasdf</p>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                         </div>
+                    </div>  
+                </div> 
+            </div>
+        </div>
+        
+
+        <footer class="footer-box">
+            <div class="container">
+                <div class="row">
+                   <div class="col-md-12 white_fonts">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="full">
+                                    <h3>Menu</h3>
+                                </div>
+                                <div class="full">
+                                    <ul class="menu_footer">
+                                        <li><a href="home.html">> Home</a></li>
+                                        <li><a href="about.html">> About</a></li>
+                                        <li><a href="exchange.html">> Exchange</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="full">
+                                    <div class="footer_blog full white_fonts">
+                                 <h3>Partenaire</h3>
+                                
+                             </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="full">
+                                    <div class="footer_blog full white_fonts">
+                                 <h3>Contact</h3>
+                                 <ul class="full">
+                                   <li><img src="Include/images/i5.png"><span>Tanambao<br>Fianarantsoa</span></li>
+                                   <li><img src="Include/images/i6.png"><span>tsarandropaul@gmail.com</span></li>
+                                   <li><img src="Include/images/i7.png"><span>034 33 790 87</span></li>
+                                 </ul>
+                             </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="crp">Ecole Nationale d'Informatique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
+
+<div id="app">
+    <input v-model = "message"/>
+<div>
+{% endblock %}
+
+ {% block stylesheets %}
+            {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+            {{ encore_entry_link_tags('app') }}
+
+            
+                 <link rel="stylesheet" href="/build/app.css"> 
+        {% endblock %}
+
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+
+            <!-- Renders app.js & a webpack runtime.js file
+                <script src="/build/runtime.js" defer></script>
+                <script src="/build/app.js" defer></script>
+                See note below about the "defer" attribute -->
+        {% endblock %}
